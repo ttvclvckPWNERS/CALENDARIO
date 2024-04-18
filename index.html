@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="calendar">
+  <div class="month" id="month-year"></div>
+  <div class="days" id="calendar-days"></div>
+
+  <form action="https://api.web3forms.com/submit" method="POST">
+  <div class="events">
+    <input type="hidden" name="access_key" value="403c052e-f4d6-4113-a23f-59286d4eaa1c">
+    <label style="font-size: 16px;">Event: <input type="text" class="event-input" id="event-input" placeholder="Enter event"></label>
+    <button class="add-event-btn" onclick="addEvent()">Add Event</button>
+    <button class="submit" type="submit"><span>Submit</span></button>
+    <div id="event-list"></div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

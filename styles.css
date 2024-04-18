@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.calendar {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.events {
+    margin-top: 20px;
+}
+
+.event-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.add-event-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.submit {
+    border-radius: 5px;
+    background-color: black;
+    border: white solid 2px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 1px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.submit:hover span {
+    padding-right: 17px;
+}
+
+.submit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.submit:hover {
+    border: yellow solid 2px;
+    color: yellow;
+}
